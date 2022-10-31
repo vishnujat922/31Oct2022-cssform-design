@@ -5,8 +5,99 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>lecture 25 html css form design</title>
+        <style>
+            body{
+                background-color: #f3e0e2;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            form.myform{
+                width:60%;
+                height:450px;
+                background: red;
+                margin: 100px auto;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.3);
+                clear: both;
+            }
+            form.myform > div{
+                width:50%;
+                height:100%;
+                float:left;
+            }
+            .white{
+                background: #ffffff;
+                text-align: center;
+            }
+            h1{
+                margin: 30px;
+            } 
+            img{
+                display: block;
+                margin:0px 100px;
+            }
+            .E-mail{
+                width:80%;
+                height:2em;
+                border-radius: 2.5px;
+                background: rgb(156, 152, 152);
+                margin: 0px 40px;
+            }
+            .E-mail > p{
+                text-align: left;
+                padding: 5px;
+            }
+            .password{
+                width:80%;
+                height:2em;
+                border-radius: 2.5px;
+                background: rgb(156, 152, 152);
+                margin: 0px 40px;
+            }
+            .password > p{
+                text-align: left;
+                padding: 5px;
+
+            }
+            button{
+                width:40%;
+                height: 45px;
+                background:#ff464c;
+                border-radius:25px;
+                font-size: 1em;
+                color: #f3e0e2;
+                margin: 0px;
+            }
+            .pink{
+                background-image:-webkit-linear-gradient(left,#ff464c,#ff4168);
+                text-align: center;
+                color: rgb(172, 167, 167);
+                text-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            }
+        </style>
     </head>
     <body>
-        <div ></div>
+        <form class="myform">
+            <div class="white">
+                    <h1>Login</h1>
+                    <img src="./img/1.png" width="180px">
+                    <p>or use your account</p>
+                    <div class="E-mail">
+                        <p>E-mail</p>
+                    </div>
+                    <div class="password">
+                        <p>password</p>
+                    </div>
+                    <p>forgot your password ?</p>
+                    <button>Login</button>
+            </div>
+            <div class="pink">
+                <div style="margin:120px 60px;">
+                    <h1>HTML CSS Login Form</h1>
+                    <p>This Login Form Is Created Using Pure CSS And HTML. For Social Icons,Fonts Awesome Is Used</p>
+                </div>
+            </div>
+        </form>
     </body>
 </html>
